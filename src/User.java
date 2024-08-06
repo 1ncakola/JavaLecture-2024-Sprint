@@ -1,3 +1,4 @@
+package src;
 
 public abstract class User {
     private String username;

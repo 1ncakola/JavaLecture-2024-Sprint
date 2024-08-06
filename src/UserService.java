@@ -1,3 +1,6 @@
+package src;
+
+import org.mindrot.jbcrypt.BCrypt;
 
 import java.sql.SQLException;
 
