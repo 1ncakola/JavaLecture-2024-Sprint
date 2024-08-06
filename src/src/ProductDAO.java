@@ -1,4 +1,3 @@
-package src;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -29,11 +28,7 @@ public class ProductDAO {
                 // Use the constructor that includes the 'id' field
                 Product product = new Product(rs.getInt("id"), rs.getString("name"), rs.getDouble("price"), rs.getInt("quantity"), rs.getString("seller_id"));
                 products.add(product);
-
-                
             }
-
-        
         }
         return products;
     }
