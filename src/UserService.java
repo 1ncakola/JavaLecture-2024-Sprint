@@ -3,7 +3,7 @@ package src;
 import org.mindrot.jbcrypt.BCrypt;
 
 import java.sql.SQLException;
-
+import java.util.List;
 
 
 public class UserService {
@@ -25,6 +25,18 @@ public class UserService {
             return user;
         }
         return null;
+    }
+
+    public List<User> getAllUsers() throws SQLException {
+        return userDAO.getAllUsers();
+    }
+
+    public void deleteUser(String username) throws SQLException {
+        userDAO.deleteUser(username);
+    }
+
+    public User getUserByUsername(String username) throws SQLException {
+        return userDAO.getUserByUsername(username);
     }
 
 }

@@ -5,9 +5,9 @@ public class Product {
     private String name;
     private double price;
     private int quantity;
-    private String sellerId;
+    private int sellerId;
 
-    public Product(int id, String name, double price, int quantity, String sellerId) {
+    public Product(int id, String name, double price, int quantity, int sellerId) {
         this.id = id;
         this.name = name;
         this.price = price;
@@ -15,7 +15,12 @@ public class Product {
         this.sellerId = sellerId;
     }
 
-
+    public Product(String name, double price, int quantity, int sellerId) {
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+        this.sellerId = sellerId;
+    }
 
     // Getters and Setters
 
@@ -31,7 +36,7 @@ public class Product {
     public int getQuantity() { return quantity; }
     public void setQuantity(int quantity) { this.quantity = quantity; }
 
-    public String getSellerId() { return sellerId; }
-    public void setSellerId(String sellerid) { this.sellerId = sellerid; }
+    public int getSellerId() { return sellerId; }
+    public void setSellerId(int sellerid) { this.sellerId = sellerid; }
 
 }

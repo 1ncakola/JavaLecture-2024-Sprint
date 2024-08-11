@@ -1,5 +1,5 @@
 package src;
-
+// This is the connection to our postgres
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;

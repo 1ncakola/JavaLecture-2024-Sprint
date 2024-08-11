@@ -7,7 +7,7 @@ CREATE TABLE users (
 );
 
 
-CREATE TABLE products (
+CREATE TABLE productss (
 	id SERIAL PRIMARY KEY,
 	name VARCHAR(100) NOT NULL,
 	price NUMERIC(10, 2) NOT NULL,
